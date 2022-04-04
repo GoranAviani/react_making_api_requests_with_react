@@ -6,10 +6,10 @@ import SearchBar from "./SearchBar";
 
 class App extends React.Component {
 
-    onSearchSubmit(term) {
+    async onSearchSubmit(term) {
 
 // Make a request for a user with a given ID
-        axios.get('https://api.unsplash.com/search/photos',
+        const response = await axios.get('https://api.unsplash.com/search/photos',
             {
                 params: {
                     query: term
@@ -17,9 +17,10 @@ class App extends React.Component {
                 headers: {
                     Authorization: 'Client-ID Cbo29MbIl9rNunrb5vdOQHYpZ3E_JvuNa_Fcjy-OpkI'
                 }
-            }).then((response) => {
-            console.log(response.data.results)
-        });
+            });
+
+        console.log(response.data.results)
+
     }
 
 
