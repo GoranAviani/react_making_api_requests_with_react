@@ -18,7 +18,7 @@ axios.get('https://api.unsplash.com/search/photos',
             Authorization: 'Client-ID Cbo29MbIl9rNunrb5vdOQHYpZ3E_JvuNa_Fcjy-OpkI'
         }
     }).then((response)=>{
-        console.log(response)
+        console.log(response.data.results)
 });
     }
 
