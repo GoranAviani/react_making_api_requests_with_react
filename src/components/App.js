@@ -15,20 +15,11 @@ axios.get('https://api.unsplash.com/search/photos',
           query: term
         },
         headers: {
-            Authorization: 'Client-ID your-access-key'
+            Authorization: 'Client-ID Cbo29MbIl9rNunrb5vdOQHYpZ3E_JvuNa_Fcjy-OpkI'
         }
-    })
-  .then(function (response) {
-    // handle success
-    console.log(response);
-  })
-  .catch(function (error) {
-    // handle error
-    console.log(error);
-  })
-  .then(function () {
-    // always executed
-  });
+    }).then((response)=>{
+        console.log(response)
+});
     }
 
 
