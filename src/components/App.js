@@ -21,8 +21,6 @@ class App extends React.Component {
                 }
             });
         this.setState({images: response.data.results})
-
-
     }
 
 
@@ -36,8 +34,6 @@ class App extends React.Component {
             </div>
         )
     }
-
-
 }
 
 export default App;
